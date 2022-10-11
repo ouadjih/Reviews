@@ -1,0 +1,14 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.line{
+    position: relative;
+    top:-1em;
+    width: 50px;
+    padding: 2px;
+    background-color:#5aaef3 ;
+
+}
