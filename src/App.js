@@ -23,12 +23,15 @@ function App() {
       else
       return  index-1
   })}
+  function randomIndex() {
+    setIndex(Math.floor(Math.random() * 4))
+  }
 
   return (
     <div className="App">
       <h2>Our Reviews</h2>
       <div className='line'></div>
-      <Card {...data[index]} prev={prevIndex} next={nextIndex}/> 
+      <Card {...data[index]} prev={prevIndex} next={nextIndex} shuffle={randomIndex}/> 
       {//data.map(p =>
          //<Card {...p}/>
       //)

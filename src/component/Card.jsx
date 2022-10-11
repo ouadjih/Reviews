@@ -2,7 +2,7 @@ import React from 'react'
 import './Card.css'
 import {MdOutlineReviews} from 'react-icons/md'
 import {AiOutlineLeft,AiOutlineRight} from 'react-icons/ai'
-export default function Card({id,name,job,image,text,prev,next}) {
+export default function Card({id,name,job,image,text,prev,next,shuffle}) {
   return (
     <div className='card'>
 
@@ -16,7 +16,7 @@ export default function Card({id,name,job,image,text,prev,next}) {
             <button className="btn" onClick={next}><AiOutlineRight/></button>
         </div>
        
-        <button className="suprise">Suprise</button>
+        <button className="suprise" onClick={shuffle}>Suprise</button>
     </div>
   )
 }
